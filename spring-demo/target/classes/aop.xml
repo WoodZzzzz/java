@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
+	
+	<bean id="hello" class="com.wood.aop.HelloImpl" />
+	<bean id="timeHandler" class="com.wood.aop.TimeHandler" />
+	<bean id="logHandler" class="com.wood.aop.LogHandler" />
+	
+	<aop:config proxy-target-class="false">
+		<aop:aspect id="time" ref="timeHandler" order="2">
+			 <aop:pointcut expression="execution(* com.wood.aop.Hello.*(..))" id="addTime"/>
+			 <aop:before method="printTime" pointcut-ref="addTime"/>
+			 <aop:after method="printTime" pointcut-ref="addTime"/>
+		</aop:aspect>
+		<aop:aspect id="log" ref="logHandler" order="2">
+			<aop:pointcut expression="execution(* com.wood.aop.Hello.do*(..))" id="addLog"/>
+			<aop:before method="logBefore" pointcut-ref="addLog"/>
+			<aop:after method="logAfter" pointcut-ref="addLog"/>
+		</aop:aspect>
+	</aop:config>
+</beans>

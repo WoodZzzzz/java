@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+	<!-- 默认为加载配置文件的时候就加载了Person实例，除非显示指定非延迟加载 -->
+	<!-- 构造方法注入 -->
+	<bean id="family" class="com.wood.bean.Family">
+		<constructor-arg name="person" ref="person"/>
+		<constructor-arg name="familyName" value="friendly"/>
+	</bean>
+	
+	<!-- 属性注入 -->
+	<bean id="person" class="com.wood.bean.Person" >
+		<property name="personName" value="wood"/>
+		<property name="personAge" value="25"/>
+	</bean>
+	<bean id="emptyClass" class="com.wood.bean.EmptyClass" lazy-init="true" />
+	
+	<!-- 集合注入 -->
+	<bean id="collectionClass" class="com.wood.bean.CollectionClass">
+		<property name="list">
+			<list>
+				<value>123</value>
+				<value>222</value>
+			</list>
+		</property>
+		<property name="map">
+			<map>
+				<entry key-ref="family" >
+					<bean class="com.wood.bean.Person">
+						<property name="personName" value="Wood" />
+						<property name="personAge" value="22" />
+					</bean>
+				</entry>
+			</map>
+		</property>
+		<property name="ints">
+			<array>
+				<value>333</value>
+				<value>444</value>
+			</array>
+		</property>
+	</bean>
+	
+	<!-- 工厂注入 -->
+	<bean id="singletonClass" class="com.wood.bean.SingletonClass" />
+	
+	<!-- init-method destroy-method -->
+	<bean id="empty" class="com.wood.bean.EmptyClass" init-method="init" destroy-method="destroy" />
+</beans>

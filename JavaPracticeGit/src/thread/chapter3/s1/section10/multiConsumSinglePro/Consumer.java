@@ -1,0 +1,14 @@
+package thread.chapter3.s1.section10.multiConsumSinglePro;
+
+public class Consumer {
+
+	private MyStack stack;
+	
+	public Consumer(MyStack stack) {
+		this.stack = stack;
+	}
+	
+	public void popMethod() {
+		System.out.println("popMethod " + stack.pop());
+	}
+}

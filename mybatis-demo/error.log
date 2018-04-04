@@ -1,0 +1,12 @@
+2018-03-22 14:41:26  [ MyScheduler_Worker-1:0 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
+2018-03-22 14:41:28  [ MyScheduler_Worker-2:2000 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
+2018-03-22 14:41:30  [ MyScheduler_Worker-3:3990 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
+2018-03-22 14:41:44  [ MyScheduler_Worker-1:0 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
+2018-03-22 14:41:46  [ MyScheduler_Worker-2:1014 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
+2018-03-22 14:41:48  [ MyScheduler_Worker-3:3008 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
+2018-03-22 17:45:26  [ dufy_test_Worker-1:0 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
+2018-03-22 17:45:28  [ dufy_test_Worker-2:1079 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
+2018-03-22 17:45:30  [ dufy_test_Worker-1:3095 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
+2018-03-22 17:45:32  [ dufy_test_Worker-2:5100 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
+2018-03-22 17:50:22  [ dufy_test_Worker-1:0 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
+2018-03-22 17:50:24  [ dufy_test_Worker-2:1317 ] - [ ERROR ]  这是Spring 整合Quartz的定时任务
