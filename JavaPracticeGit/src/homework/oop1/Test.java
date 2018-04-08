@@ -18,7 +18,8 @@ public class Test {
         //3、小明选择地点、然后去吃饭
         FoodFactory factory = new FoodFactory();
         Map<?, ?> map = factory.getCookForFood();
-        xm.eat((Food)map.get("rice"));
+//        xm.eat((Food)map.get("rice"));
+        xm.eat((Food)FoodFactoryTypeEnum.CHOOSE1.get().get("rice"));
 
     }
 }
