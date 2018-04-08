@@ -26,7 +26,7 @@ public class RedisTest {
 		System.out.println(sR.get());
 	}
 
-	//@Test
+	@Test
 	public void pubsubTest() {
 		Jedis je = null;
 		try {
