@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/mybatis-demo.iml" filepath="$PROJECT_DIR$/mybatis-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wood-common-lib/wood-common-lib.iml" filepath="$PROJECT_DIR$/wood-common-lib/wood-common-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wood-dal/wood-dal.iml" filepath="$PROJECT_DIR$/wood-dal/wood-dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wood-generator/wood-generator.iml" filepath="$PROJECT_DIR$/wood-generator/wood-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wood-web/wood-web.iml" filepath="$PROJECT_DIR$/wood-web/wood-web.iml" />
     </modules>
   </component>
 </project>

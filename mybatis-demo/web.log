@@ -1,0 +1,14 @@
+2018-04-12 15:39:35,207 INFO  [main] o.s.t.c.s.DefaultTestContextBootstrapper [] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-04-12 15:39:35,227 INFO  [main] o.s.t.c.s.DefaultTestContextBootstrapper [] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@276438c9, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@588df31b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33b37288, org.springframework.test.context.transaction.TransactionalTestExecutionListener@77a57272, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7181ae3f]
+2018-04-12 15:39:35,343 INFO  [main] o.s.c.s.GenericApplicationContext [] - Refreshing org.springframework.context.support.GenericApplicationContext@4d49af10: startup date [Thu Apr 12 15:39:35 CST 2018]; root of context hierarchy
+2018-04-12 15:39:36,530 INFO  [main] c.a.druid.pool.DruidDataSource [] - {dataSource-1} inited
+2018-04-12 15:39:36,912 ERROR [main] c.w.test.dal.StudentMapperTest [] - 2324
+2018-04-12 15:39:36,913 ERROR [main] com.wood.dal.dao.StudentExample [] - 123123
+2018-04-12 15:39:36,964 DEBUG [main] o.m.s.t.SpringManagedTransaction [] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5c8eee0f] will not be managed by Spring
+2018-04-12 15:39:36,968 DEBUG [main] c.w.d.d.S.selectByExample [] - ==>  Preparing: select student_id, student_name from student 
+2018-04-12 15:39:36,992 DEBUG [main] c.w.d.d.S.selectByExample [] - ==> Parameters: 
+2018-04-12 15:39:37,007 DEBUG [main] c.w.d.d.S.selectByExample [] - <==      Total: 2
+2018-04-12 15:39:37,008 ERROR [main] c.w.test.dal.StudentMapperTest [] - 2123123123
+2018-04-12 15:39:37,009 INFO  [main] c.w.test.dal.StudentMapperTest [] - 2123123123
+2018-04-12 15:39:37,011 INFO  [Thread-1] o.s.c.s.GenericApplicationContext [] - Closing org.springframework.context.support.GenericApplicationContext@4d49af10: startup date [Thu Apr 12 15:39:35 CST 2018]; root of context hierarchy
+2018-04-12 15:39:37,018 INFO  [Thread-1] c.a.druid.pool.DruidDataSource [] - {dataSource-1} closed

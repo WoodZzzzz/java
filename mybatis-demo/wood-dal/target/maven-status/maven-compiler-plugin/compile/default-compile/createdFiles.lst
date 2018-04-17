@@ -1,0 +1,8 @@
+com\wood\dal\dao\Student.class
+com\wood\dal\dao\StudentExample$Criteria.class
+com\wood\dal\config\MybatisConfig.class
+com\wood\dal\dao\StudentMapper.class
+com\wood\dal\dao\StudentExample.class
+com\wood\dal\config\DataSourceConfig.class
+com\wood\dal\dao\StudentExample$GeneratedCriteria.class
+com\wood\dal\dao\StudentExample$Criterion.class

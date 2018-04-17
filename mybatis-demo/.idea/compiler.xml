@@ -6,11 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mybatis-demo" />
+        <module name="wood-common-lib" />
+        <module name="wood-dal" />
+        <module name="wood-generator" />
+        <module name="wood-web" />
+        <module name="woodgenerator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mybatis-demo" target="1.8" />
+      <module name="wood-common-lib" target="1.8" />
+      <module name="wood-dal" target="1.8" />
+      <module name="wood-generator" target="1.8" />
+      <module name="wood-web" target="1.8" />
+      <module name="woodgenerator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
